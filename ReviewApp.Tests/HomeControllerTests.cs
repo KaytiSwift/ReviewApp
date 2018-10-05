@@ -30,7 +30,6 @@ namespace ReviewApp.Tests
 
             var result = underTest.Index();
             reviewRepo.Received().GetAll();
-
         }
     }
 }
