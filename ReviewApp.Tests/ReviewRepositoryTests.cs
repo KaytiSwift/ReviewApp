@@ -15,5 +15,13 @@ namespace ReviewApp.Tests
             Assert.Equal(3, result.Count);
         }
 
+        [Fact]
+        public void FindById_Returns_Correct_Review()
+        {
+            var underTest = new ReviewRepository();
+            var result = underTest.FindByID(1);
+            Assert.Equal(1, result.ID);
+        }
+
     }
 }

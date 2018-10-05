@@ -8,9 +8,7 @@ namespace ReviewApp
 {
     public class ReviewRepository : IReviewRepository
     {
-        public List<Review> GetAll()
-        {
-            var all = new Dictionary<int, Review>()
+        Dictionary<int, Review> all = new Dictionary<int, Review>()
             {
                 {
                     1, new Review()
@@ -26,7 +24,7 @@ namespace ReviewApp
                 {
                     2, new Review()
                     {
-                        ID = 2, 
+                        ID = 2,
                         Title = "Harry Potter and the Philosopher's Stone",
                         ImageURL = "https://mvpo.us/img/P5159.jpg",
                         ReviewCategory = "Fantasy",
@@ -44,7 +42,15 @@ namespace ReviewApp
                     }
                 }
             };
+
+        public List<Review> GetAll()
+        {            
             return all.Values.ToList();
+        }
+
+        public Review FindByID(int id)
+        {
+            return all[id];
         }
     }
 }
