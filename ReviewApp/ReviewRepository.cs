@@ -8,6 +8,11 @@ namespace ReviewApp
 {
     public class ReviewRepository : IReviewRepository
     {
+        public ReviewRepository()
+        {
+            //default constructor
+        }
+
         Dictionary<int, Review> all = new Dictionary<int, Review>()
             {
                 {
@@ -48,7 +53,7 @@ namespace ReviewApp
             return all.Values.ToList();
         }
 
-        public Review FindByID(int id)
+        public Review FindById(int id)
         {
             return all[id];
         }

@@ -17,8 +17,14 @@ namespace ReviewApp.Controllers
 
         public ViewResult Index()
         {
-            reviewRepo.GetAll();
-            return View();
+            var model = reviewRepo.GetAll();
+            return View(model);
+        }
+
+        public ViewResult Details(int id)
+        {
+            var model = reviewRepo.FindById(id);
+            return View(model);
         }
     }
 

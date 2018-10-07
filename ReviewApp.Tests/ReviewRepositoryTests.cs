@@ -19,7 +19,7 @@ namespace ReviewApp.Tests
         public void FindById_Returns_Correct_Review()
         {
             var underTest = new ReviewRepository();
-            var result = underTest.FindByID(1);
+            var result = underTest.FindById(1);
             Assert.Equal(1, result.ID);
         }
 
