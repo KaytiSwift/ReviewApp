@@ -22,7 +22,7 @@ namespace ReviewApp
                         Title ="Venom",
                         ImageURL ="/images/Venom.jpg",
                         ReviewCategory="Action",
-                        Content="This movie sucked!",
+                        Content="The critics said this movie sucked! I haven't seen it yet but Neko said it was awesome! I guess I need to go see it myself.",
                         AltPicText = "Venom"
                     }
 
@@ -34,7 +34,7 @@ namespace ReviewApp
                         Title = "Harry Potter and the Philosopher's Stone",
                         ImageURL = "/images/HarryPotter.jpg",
                         ReviewCategory = "Fantasy",
-                        Content = "Best movie EVER!!!",
+                        Content = "Best movie EVER!!! Based on the best book series ever! I love this movie. Go watch it if you haven't.",
                         AltPicText = "Harry Potter"
                     }
                 },
@@ -45,7 +45,7 @@ namespace ReviewApp
                         Title = "Guardians of the Galaxy",
                         ImageURL = "/images/Guardians.jpg",
                         ReviewCategory = "Sci-Fi",
-                        Content = "Hilarious! A must see movie!",
+                        Content = "Hilarious! A must see movie! High quality writing just like every other MCU movie. If they don't make a third one, my heart will break.",
                         AltPicText = "Guardians"
                     }
                 }

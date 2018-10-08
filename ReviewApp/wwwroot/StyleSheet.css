@@ -1,17 +1,30 @@
 ﻿body {
     background-color: cadetblue;
+    font-size: 2rem;
 }
 
 .image {
-    width: 500px;
+    width: 20vw;
     height: auto;    
 }
 
 h1 {
-    font-size: larger;  
+    font-size: 4rem;  
     font-weight: bold;
 }
 
 .category {
     font-size: smaller;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color:mediumvioletred;
+}
+a:hover {
+    color: deeppink;
 }

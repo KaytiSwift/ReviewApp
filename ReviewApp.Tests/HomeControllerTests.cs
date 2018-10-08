@@ -12,12 +12,12 @@ namespace ReviewApp.Tests
     public class HomeControllerTests
     {
         IReviewRepository reviewRepo;
-        HomeController underTest;
+        ReviewsController underTest;
 
         public HomeControllerTests()
         {
             reviewRepo = Substitute.For<IReviewRepository>();
-            underTest = new HomeController(reviewRepo);
+            underTest = new ReviewsController(reviewRepo);
         }
 
         [Fact]
