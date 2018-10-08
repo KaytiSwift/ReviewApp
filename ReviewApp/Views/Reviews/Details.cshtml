@@ -14,14 +14,15 @@
 <body>
     <section>
         <h1>Details for @Model.Title</h1>
+        
+    </section>
+    <section class="review">
         <img class="image" src="@Model.ImageURL" alt="@Model.AltPicText" />
-    </section>
-    <section>
         <p>Review: @Model.Content</p>
-    </section>
-    <section class="category">
-        Category: @Model.ReviewCategory
-    </section>
-    <section><a href="/reviews/index">Home Page</a></section>
+        <p id="category">Category: @Model.ReviewCategory</p>
+    </section>    
+    <footer>
+    <a href="/reviews/index">Home Page</a>
+    </footer>
 </body>
 </html>

@@ -5,17 +5,21 @@
 
 .image {
     width: 20vw;
-    height: auto;    
+    height: auto;
+    float: left;
+    margin: 0px 4vw 0px 4vw;    
 }
 
 h1 {
     font-size: 4rem;  
     font-weight: bold;
+    text-align:center;
 }
 
-.category {
-    font-size: smaller;
+#category {
+    font-size: 1rem;
 }
+
 
 a:link {
     color: black;
@@ -27,4 +31,8 @@ a:visited{
 }
 a:hover {
     color: deeppink;
+}
+
+footer {
+    text-align: center;
 }
