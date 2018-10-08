@@ -21,6 +21,7 @@ namespace ReviewApp.Tests
             var underTest = new ReviewRepository();
             var result = underTest.FindById(1);
             Assert.Equal(1, result.ID);
+            Assert.Equal("Venom", result.Title);
         }
 
     }

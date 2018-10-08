@@ -12,5 +12,6 @@ namespace ReviewApp.Models
         public string ImageURL { get; set; }
         public string ReviewCategory { get; set; }
         public string Content { get; set; }
+        public string AltPicText { get; set; }
     }
 }
