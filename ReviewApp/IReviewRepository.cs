@@ -8,7 +8,10 @@ namespace ReviewApp
 {
     public interface IReviewRepository
     {
+        //Getall method returns a list of reviews
         List<Review> GetAll();
+
+        //findbyid method returns a review
         Review FindById(int id);
     }
 }

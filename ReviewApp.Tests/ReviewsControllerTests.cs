@@ -9,12 +9,12 @@ using Xunit;
 
 namespace ReviewApp.Tests
 {
-    public class HomeControllerTests
+    public class ReviewsControllerTests
     {
         IReviewRepository reviewRepo;
         ReviewsController underTest;
 
-        public HomeControllerTests()
+        public ReviewsControllerTests()
         {
             reviewRepo = Substitute.For<IReviewRepository>();
             underTest = new ReviewsController(reviewRepo);

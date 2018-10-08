@@ -13,7 +13,8 @@ namespace ReviewApp
             //default constructor
         }
 
-        Dictionary<int, Review> all = new Dictionary<int, Review>()
+        //Instantiates an instance of a dictionary with int as the key and Review as the value, then creates three new instances of Review
+        Dictionary<int, Review> all = new Dictionary<int, Review>() 
             {
                 {
                     1, new Review()
@@ -51,11 +52,13 @@ namespace ReviewApp
                 }
             };
 
+        //GetAll method with returns the all instance of the dictionary, get the values, puts the values in a list and returns the list
         public List<Review> GetAll()
         {            
             return all.Values.ToList();
         }
 
+        //FindById takes in an integer and finds that key from the dictionary and returns the value
         public Review FindById(int id)
         {
             return all[id];
