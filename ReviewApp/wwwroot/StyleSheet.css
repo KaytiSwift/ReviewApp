@@ -1,3 +1,17 @@
 ﻿body {
     background-color: cadetblue;
 }
+
+.image {
+    width: 500px;
+    height: auto;    
+}
+
+h1 {
+    font-size: larger;  
+    font-weight: bold;
+}
+
+.category {
+    font-size: smaller;
+}
